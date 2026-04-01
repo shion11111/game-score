@@ -1,8 +1,9 @@
-import { initializeSession, savePlayer, resetSession } from '../../game-session.js';
-import { recordGarfieldHighScore } from '../../score-manager.js';
-import { getLeaderboard } from '../../leaderboard.js';
-import { renderStatus, renderLeaderboard } from '../../ui.js';
-import { logAction } from '../../utils.js';
+import { initializeSession, savePlayer, resetSession } from '../module/game-session.js';
+import { recordGarfieldHighScore } from '../module/score-manager.js';
+import { getLeaderboard } from '../module/leaderboard.js';
+import { renderStatus, renderLeaderboard } from '../module/ui.js';
+import { logAction } from '../module/utils.js';
+
 
 document.addEventListener('DOMContentLoaded', () => {
   initializeSession();
